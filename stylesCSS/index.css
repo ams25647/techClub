@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0));
+    background-image: url(../imageGallery/pcbBackground.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.card {
+    background-image: linear-gradient(to bottom, rgba(3, 193, 0, 0.959), rgb(255, 255, 255));
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.wrap {
+    padding: 10px;
+    padding-bottom: 30px;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #0fa,
+              0 0 0.8rem #0fa,
+              0 0 2.8rem #0fa,
+              inset 0 0 1.3rem #0fa;
+    animation: 0.5s ease-in-out infinite alternate;
+}
+.headerOne {
+    align-self: center;
+}
+h1, a {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    /* text-shadow: rgb(0, 146, 22), 50px; */
+    text-shadow:
+    0 0 7px #047704,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+/* fix font weight */
+h1 {
+    color: rgb(245, 255, 245);
+    font-style: italic;
+    font-weight: 600;
+    width: 65%;
+    align-content: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+    font-size: large;
+    font-weight: 400;
+    padding: 5px;
+}
+
+a:hover {
+    color: rgb(175, 255, 175);
+    transform: scale(1.5);
+    transition: .2s ease;
+}
+.links {
+    display: grid;
+
+}
+#youtube, #discord, #twitter, #instagram {
+    margin-top: 8px;
+    margin: auto;
+    opacity: .5;
+    filter: grayscale(1);
+}
+
+#youtube:hover, #discord:hover, #twitter:hover, #instagram:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transition: .5s ease;
+}
+@keyframes pulsate {
+    100% {
+      /* Larger blur radius */
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+    0% {
+      /* Smaller blur radius */
+      text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #0fa,
+        0 0 45px #0fa,
+        0 0 55px #0fa,
+        0 0 70px #0fa,
+        0 0 80px #0fa;
+    }
+  }
+  
