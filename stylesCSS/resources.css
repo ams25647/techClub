@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
-
-@media screen and (min-width: 500px)  {
+@media screen and (max-width: 500px)  {
     nav {
         width: 50%;
         margin: auto;
@@ -42,18 +41,11 @@ body {
               inset 0 0 1.3rem #0fa;
     animation: 0.5s ease-in-out infinite alternate;
 }
-.headerOne {
-    text-align: center;
-    display: inline-block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
 nav {
     padding: 2rem;
 }
 
-h1, a {
+h2, a {
     font-family: 'Orbitron', sans-serif;
     font-weight: 600;
     /* text-shadow: rgb(0, 146, 22), 50px; */
@@ -68,7 +60,7 @@ h1, a {
     0 0 151px #0fa;
 }
 
-h1 {
+h2 {
     color: rgb(245, 255, 245);
     font-style: italic;
     font-weight: 600;
@@ -89,46 +81,3 @@ a:hover {
     transform: scale(1.5);
     transition: .2s ease;
 }
-.links {
-    display: flex;
-
-}
-#youtube, #discord, #twitter, #instagram, #linkedin {
-    margin-top: 8px;
-    margin: auto;
-    opacity: .5;
-    filter: grayscale(1);
-}
-
-#youtube:hover, #discord:hover, #twitter:hover, #instagram:hover, #linkedin:hover {
-    filter: grayscale(0);
-    opacity: 1;
-    transition: .5s ease;
-}
-@keyframes pulsate {
-    100% {
-      /* Larger blur radius */
-      text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #0fa,
-        0 0 80px #0fa,
-        0 0 90px #0fa,
-        0 0 100px #0fa,
-        0 0 150px #0fa;
-    }
-    0% {
-      /* Smaller blur radius */
-      text-shadow:
-        0 0 2px #fff,
-        0 0 4px #fff,
-        0 0 6px #fff,
-        0 0 10px #0fa,
-        0 0 45px #0fa,
-        0 0 55px #0fa,
-        0 0 70px #0fa,
-        0 0 80px #0fa;
-    }
-  }
-  
